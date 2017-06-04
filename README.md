@@ -1,4 +1,8 @@
+## Work in progress
+This document is in its early stages and all feedback and contributions are welcome. Email sbryant31@gmail.com to join the community.
+
 ## Overview
+
 OpenSync is an Open Source API integration Engine, API Connector Specificiation, and DAO (Decentralized Autonomous Organization). As the number of internet applications multiplies,
 many startups are attempting to build API integration solutions that allow end users to easily integrate their cloud applications. Some examples of companies doing this include
 
