@@ -1,4 +1,4 @@
-## Motivations for OpenSync
+## Overview
 OpenSync is an Open Source API integration Engine, API Connector Specificiation, and DAO (Decentralized Autonomous Organization). As the number of internet applications multiplies,
 many startups are attempting to build API integration solutions that allow end users to easily integrate their cloud applications. Some examples of companies doing this include
 
@@ -6,7 +6,7 @@ many startups are attempting to build API integration solutions that allow end u
 * Zapier
 * Workato
 
-Integrations between apps usually have `Triggers` and `Actions` that connect two app. IF a trigger happens, THEN perform one or more actions.
+Integrations between apps usually have `Triggers` and `Actions` that perform some data transfer between two or more applications. `IF` a trigger happens, `THEN` perform one or more actions.
 
 For instance:
 
@@ -15,7 +15,7 @@ Trigger: When a new lead is created in Salesforce
 Action: Add a line to my spreadsheet in Google Sheets
 ```
 
-Each company above has built an interface for users to map triggers to actions in some way. Each one of these companies has built their own collection of "API Connectors" which provide a high level interface for users to interact with APIs. And I argue that everyone is doing redundant work building these connectors, which is why we need an open connector specification! That's OpenSync!
+Each API Integration Platform company listed above has built an interface for users to map triggers to actions in some way. Each one of these companies has built their own collection of "API Connectors" which provide a high level interface for users to interact with APIs. A lot of work is being duplicated.
 
 ### What is an API connector?
 
@@ -30,25 +30,24 @@ Salesforce also has actions such as "create_lead" and "update_lead".
 These are implemented as HTTP calls to `POST /leads` and `PUT /leads`, respectively.
 ```
 
-### What if we built an open source library of API connectors?
+### Benefits of Open API Connectors
 
 If we built an open source library of API connectors that obeyed a specific format, we could lower the cost of API integration and connection dramatically. Rather than companies
 spending time and effort building private libraries of API connectors, we could all contribute to one global repository. We can build tools around it which allow every company to
 add themselves to the network, immediately enabling applications to "connect to the web." Most importantly, their users won't have to sign up for another service (such as Zapier).
 
-We can imagine a world where every app can easily integrate with every other app, and the integrations are essentially free.
-
+We can imagine a world where every app can easily integrate with every other app, and the integrations are essentially free or extremely low cost.
 
 ### Roadmap
 
 #### Building the OpenSync Connector Spec
 The first step is to define a connector specification. It is possible that we will use an extension of OpenAPI/Swagger, as well as a javascript-based API spec.
 
-The workato connector SDK is a good first step for this investigation.
+The workato connector SDK is a good learning resource for this investigation.
 https://github.com/workato/connector_sdk
 
 #### Define an OpenSync API
-Once we have defined a connector specification and we have built a sizeable library of open connectors, we will create an open source API that can be deployed on premesis or consumed as a service. This API provides the high level endpoints that a service must implement in order to create their very own API integration engine.
+Once we have defined a connector specification and we have built a sizeable library of open connectors, we will create an open source API that can be deployed on premesis or consumed as a service. This API provides the high level endpoints that a service must implement in order to embed their very own API integration engine.
 
 #### Building an Open Source API Integration Engine
 The final step is building an open source full stack web application that mimicks existing API integration platforms-as-a-service. This application will be hosted as a service on opensync.io at a minimum
@@ -59,8 +58,9 @@ The holy grail of API integration is creating standardization of domain-specific
 
 Take CRM's for example. The "Contact" object represents an entity with an Email address, name, and one or more custom fields. If we can create a standardized "Contact" object and each application can create a mapping from their format to the standardized format, we can make two-way, instant high-level synchronizations possible for end users, with minimal configuration. Basically, plug-and-play deep API integrations.
 
+### Contributing / Join the Discussion
+All feedback and dialogue is welcomed. We are currently actively seeking contributors from the OpenAPI community.
 
-### Contributing / Join the Community
 Our slack community is opensync.slack.com
 
 Email sbryant31@gmail.com for an invite / to join the community. We'd be happy to have you!
