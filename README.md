@@ -1,5 +1,5 @@
 ## Motivations for OpenSync
-OpenSync is an Open Source API integration Engine & Specificiation and Decentralized Autonomous Organization. As the number of internet applications multiplies,
+OpenSync is an Open Source API integration Engine, API Connector Specificiation, and DAO (Decentralized Autonomous Organization). As the number of internet applications multiplies,
 many startups are attempting to build API integration solutions that allow end users to easily integrate their cloud applications. Some examples of companies doing this include
 
 * Mulesoft
@@ -15,7 +15,7 @@ Trigger: When a new lead is created in Salesforce
 Action: Add a line to my spreadsheet in Google Sheets
 ```
 
-Each company above has an interface for users to map triggers to actions in some way. Each one of these companies has built their own collection of "API Connectors" which provide a high level interface for users to interact with APIs. And I argue that everyone is doing redundant work building these connectors, which is why we need an open connector specification! That's OpenSync!
+Each company above has built an interface for users to map triggers to actions in some way. Each one of these companies has built their own collection of "API Connectors" which provide a high level interface for users to interact with APIs. And I argue that everyone is doing redundant work building these connectors, which is why we need an open connector specification! That's OpenSync!
 
 ### What is an API connector?
 
@@ -37,7 +37,6 @@ spending time and effort building private libraries of API connectors, we could 
 add themselves to the network, immediately enabling applications to "connect to the web." Most importantly, their users won't have to sign up for another service (such as Zapier).
 
 We can imagine a world where every app can easily integrate with every other app, and the integrations are essentially free.
-
 
 
 ### Roadmap
