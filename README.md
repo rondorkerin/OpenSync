@@ -24,8 +24,10 @@ are "Actions" and which ones are "triggers". You can think of "Actions" as `POST
 
 For instance:
 ```
-A Salesforce connector has a trigger called "new_lead", which is implemented as a HTTP call to the endpoint `GET /leads`.
-Salesforce also has actions such as "create_lead" and "update_lead" which are implemented as HTTP calls to `POST /leads` and `PUT /leads`, respectively.
+A Salesforce connector has a trigger called "new_lead".
+new_lead is implemented as a HTTP call to the endpoint `GET /leads`.
+Salesforce also has actions such as "create_lead" and "update_lead".
+These are implemented as HTTP calls to `POST /leads` and `PUT /leads`, respectively.
 ```
 
 ### What if we built an open source library of API connectors?
