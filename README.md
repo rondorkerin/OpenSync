@@ -21,6 +21,14 @@ Action: Add a line to my spreadsheet in Google Sheets
 
 Each API Integration Platform company listed above has built an interface for users to map triggers to actions in some way. Each one of these companies has built their own collection of "API Connectors" which provide a high level interface for users to interact with APIs. A lot of work is being duplicated.
 
+## Guiding Principles
+OpenSync is based on a few principles that guide our efforts.
+
+1. API Integrations should be free for end users and incur a small infrastructure cost for SaaS companies.
+2. API Integrations should be configured by nontechnical users, and we should create GUI tools that target nontechnical users.
+3. There should be an open source format describing APIs at a higher level (Connectors), allowing any organization to create their own API integration platform, focusing on user experience rather than building/maintaining libraries of connectors.
+4. We should standardize various domain specific objects (such as CRM Leads), thus making it easier to set up advanced integrations between systems.
+
 ### What is an API connector?
 
 A "Connector" is a high level description of how to integrate with an API. You can think of it like a "SDK". Rather than simply describing the endpoints of an API, it describes which of those endpoints
