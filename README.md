@@ -1,4 +1,4 @@
-## Work in progress
+# Work in progress
 This document is in its early stages and all feedback and contributions are welcome. Email sbryant31@gmail.com to join the community.
 
 ## Overview
@@ -42,7 +42,7 @@ Salesforce also has actions such as "create_lead" and "update_lead".
 These are implemented as HTTP calls to `POST /leads` and `PUT /leads`, respectively.
 ```
 
-An example connector can be located at
+An example connector can be located at https://github.com/sbryant31/OpenSync/blob/master/connectors/example.js
 
 ### Benefits of Open API Connectors
 
