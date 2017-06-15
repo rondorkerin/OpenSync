@@ -31,7 +31,7 @@ const Metadata = {
  * The Methods object is just a helper used to reduce code duplication.
  */
 const Methods = {
-  // a special method to
+  // a special method to test the connection params
   test: {
     execute: (connection, inputs) => { return true; }
   },
