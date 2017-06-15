@@ -42,6 +42,8 @@ Salesforce also has actions such as "create_lead" and "update_lead".
 These are implemented as HTTP calls to `POST /leads` and `PUT /leads`, respectively.
 ```
 
+An example connector can be located at
+
 ### Benefits of Open API Connectors
 
 If we built an open source library of API connectors that obeyed a specific format, we could lower the cost of API integration and connection dramatically. Rather than companies
