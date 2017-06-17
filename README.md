@@ -3,7 +3,7 @@ This document is in its early stages and all feedback and contributions are welc
 
 ## Introduction
 
-OpenSync is an Open Source API Connector Specification. As the number of internet applications multiplies,
+OpenSync is an Open Source API Connector Specification. As the number of internet applications multiplies, 
 many startups are attempting to build API integration solutions that allow end users to easily integrate their cloud applications. Some examples of companies doing this include
 
 * Mulesoft
@@ -38,7 +38,8 @@ OpenSync is based on a few principles that guide our efforts.
 
 ### What is an API connector?
 
-A "Connector" is a high level description of not just *HOW* to connect with an API, but *WHAT* those functions mean. A connector has all the data for end users to be able to understand the API. The platforms extract this high level information from the connector file and display it to the user.
+A "Connector" is a high level description of not just *HOW* to connect with an API, but *WHAT* those functions mean. A connector has all the data for end users to be able to understand the API. 
+The platforms extract this high level information from the connector file and display it to the user.
 
 #### Examples
 A quick example of how connectors contain both low level details and high level information is the following:
@@ -57,19 +58,19 @@ https://github.com/sbryant31/OpenSync/blob/master/connectors/example.js
 ### Roadmap
 
 #### Recruit IPaaS company leaders
-We are reaching out to owners of startup IPaaS companies to learn their needs and how their connector libraries are assembled. There will be a round table between these companies where we discuss a common vision and possible implementations. 
+We are reaching out to owners of startup IPaaS companies to learn their needs and how their connector libraries are assembled. There will be a round table between these companies where we discuss a 
+common vision and possible implementations. 
 
 #### Building the OpenSync Connector Spec
 The second step is to define a connector specification. It is possible that we will use an extension of OpenAPI/Swagger (language independent), as well as a javascript-based API spec, because javascript is the de facto standard web language.
 
 The workato connector SDK is a good learning resource for this investigation.
-https://github.com/workato/connector_sdk
-
+[https://github.com/workato/connector_sdk](https://github.com/workato/connector_sdk)
 
 #### Standardize Domain Specific Objects
 The holy grail of API integration is creating standardization of domain-specific object schemas. What does this mean?
-
-Take CRM's for example. The "Contact" object represents an entity with an Email address, name, and one or more custom fields. If we can create a standardized "Contact" object and each application can create a mapping from their format to the standardized format, we can make two-way, instant high-level synchronizations possible for end users, with minimal configuration. Basically, plug-and-play deep API integrations.
+Take CRMs for example. The "Contact" object represents an entity with an Email address, name, and one or more custom fields. If we can create a standardized "Contact" object and each application can create a mapping from their format to the standardized format, 
+we can make two-way, instant high-level synchronizations possible for end users, with minimal configuration. Basically, plug-and-play deep API integrations.
 
 ### Build Open Source Tools
 Based on this standard, there is no limit to the amount of open source tools that can be built around it. An entire open source API Integration engine is a possibility, as well as various helper APIs.
