@@ -51,7 +51,8 @@ The Lead object contains a field called emailAddress.
 To end users, we call this "Email Address" and provide a description.
 ```
 
-A real-life code example of a connector can be seen at [url]https://github.com/sbryant31/OpenSync/blob/master/connectors/example.js[/url]
+A real-life code example of a connector can be seen at 
+https://github.com/sbryant31/OpenSync/blob/master/connectors/example.js
 
 ### Roadmap
 
